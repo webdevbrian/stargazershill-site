@@ -25,6 +25,12 @@ header nav a { color: var(--ink); font-weight: 600; }
 .screen { margin: 28px auto 0; max-width: 960px; padding: 10px; background: #05060e; border: 2px solid var(--panel-edge); border-radius: 22px; box-shadow: 0 8px 0 rgba(0, 0, 0, .45); }
 .screen img, .screen video { display: block; width: 100%; border-radius: 12px; }
 .soon { margin-top: 20px; font-weight: 600; font-size: 16px; letter-spacing: .3px; color: var(--gold) !important; }
+/* The store badges: Apple's and Google's own artwork, as on the studio's other sites. */
+.get { display: flex; flex-wrap: wrap; gap: 14px 20px; justify-content: center; align-items: center; margin: 36px 0 0; }
+.get a { display: block; line-height: 0; }
+.get img { display: block; height: 60px; width: auto; }
+.get + .soon { margin-top: 16px; font-size: 15px; }
+.price .get { justify-content: flex-start; margin: 16px 0 8px; }
 
 main { max-width: 680px; margin: 0 auto; padding: 24px 16px 48px; }
 h2 { font-size: 22px; line-height: 1.3; margin: 32px 0 8px; color: var(--ink); }
@@ -51,10 +57,14 @@ h2 { font-size: 22px; line-height: 1.3; margin: 32px 0 8px; color: var(--ink); }
 footer { text-align: center; color: var(--ink-soft); font-size: 14px; padding: 0 16px 32px; }
 footer nav { margin: 0 0 8px; }
 footer nav a { font-weight: 600; }
+footer p { margin: 4px 0; }
+footer .legal { font-size: 12px; max-width: 560px; margin: 12px auto 0; }
 
 @media (max-width: 640px) {
   header h1 { font-size: 32px; }
   .how, .gallery, .share { grid-template-columns: 1fr; }
+  .get { gap: 12px; margin-top: 28px; }
+  .get img { height: 50px; }
   .screen { padding: 6px; border-radius: 16px; }
   .screen img, .screen video { border-radius: 10px; }
 }
